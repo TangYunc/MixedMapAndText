@@ -13,6 +13,7 @@
 		DD965F5020E375950055C790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD965F4F20E375950055C790 /* Assets.xcassets */; };
 		DD965F5320E375950055C790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD965F5120E375950055C790 /* LaunchScreen.storyboard */; };
 		DD965F5620E375950055C790 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD965F5520E375950055C790 /* main.m */; };
+		DD965F5E20E37B000055C790 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD965F5D20E37B000055C790 /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		DD965F5220E375950055C790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD965F5420E375950055C790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD965F5520E375950055C790 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD965F5C20E37B000055C790 /* MixedMapAndText-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixedMapAndText-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD965F5D20E37B000055C790 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +65,13 @@
 				DD965F4720E375950055C790 /* AppDelegate.m */,
 				DD965F4920E375950055C790 /* ViewController.h */,
 				DD965F4A20E375950055C790 /* ViewController.m */,
+				DD965F5D20E37B000055C790 /* DemoViewController.swift */,
 				DD965F4C20E375950055C790 /* Main.storyboard */,
 				DD965F4F20E375950055C790 /* Assets.xcassets */,
 				DD965F5120E375950055C790 /* LaunchScreen.storyboard */,
 				DD965F5420E375950055C790 /* Info.plist */,
 				DD965F5520E375950055C790 /* main.m */,
+				DD965F5C20E37B000055C790 /* MixedMapAndText-Bridging-Header.h */,
 			);
 			path = MixedMapAndText;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				TargetAttributes = {
 					DD965F4220E375950055C790 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,6 +151,7 @@
 				DD965F4B20E375950055C790 /* ViewController.m in Sources */,
 				DD965F5620E375950055C790 /* main.m in Sources */,
 				DD965F4820E375950055C790 /* AppDelegate.m in Sources */,
+				DD965F5E20E37B000055C790 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +285,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832LY843KW;
 				INFOPLIST_FILE = MixedMapAndText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TYC.MixedMapAndText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedMapAndText/MixedMapAndText-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +303,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832LY843KW;
 				INFOPLIST_FILE = MixedMapAndText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TYC.MixedMapAndText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedMapAndText/MixedMapAndText-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
